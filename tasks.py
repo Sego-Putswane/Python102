@@ -55,8 +55,6 @@ def find_largest(numbers):
     largest = max(numbers)
     return largest
 
-print(find_largest([1,3,7,2,9]))
-
 # Task 5: Reverse a Number
 def reverse_number(num):
     """
@@ -64,7 +62,9 @@ def reverse_number(num):
     Return the reversed number.
     Example: reverse_number(123) → 321.
     """
-    pass
+    reverse = num[::-1]
+    return reverse
+print(reverse_number([1,2,3,4,5]))
 
 # Task 6: Leap Year Check
 def is_leap_year(year):
