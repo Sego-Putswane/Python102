@@ -37,7 +37,13 @@ def is_prime(num):
     Return True if the number is prime, otherwise False.
     Example: is_prime(7) → True, is_prime(10) → False.
     """
-    pass
+    if num <= 1:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+print(is_prime(7))
 
 # Task 4: Largest Number in List
 def find_largest(numbers):
