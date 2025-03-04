@@ -52,7 +52,10 @@ def find_largest(numbers):
     Return the largest number.
     Example: find_largest([3, 7, 2, 9]) → 9.
     """
-    pass
+    largest = max(numbers)
+    return largest
+
+print(find_largest([1,3,7,2,9]))
 
 # Task 5: Reverse a Number
 def reverse_number(num):
