@@ -4,8 +4,11 @@ def sum_of_squares(n):
     Calculate the sum of squares of the first `n` natural numbers.
     Example: If n = 3, return 1² + 2² + 3² = 14.
     """
-    pass
-
+    result = 0
+    for i in range(1, n+1):
+        result += i**2
+    return result
+        
 # Task 2: Fibonacci Sequence
 def fibonacci(n):
     """
@@ -97,3 +100,5 @@ def validate_password(password):
     Example: validate_password("Pass123!") → True.
     """
     pass
+
+print(sum_of_squares(3))
