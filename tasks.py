@@ -64,7 +64,6 @@ def reverse_number(num):
     """
     reverse = num[::-1]
     return reverse
-print(reverse_number([1,2,3,4,5]))
 
 # Task 6: Leap Year Check
 def is_leap_year(year):
@@ -74,8 +73,15 @@ def is_leap_year(year):
     A leap year is divisible by 4 but not by 100, unless it is also divisible by 400.
     Example: is_leap_year(2000) → True, is_leap_year(1900) → False.
     """
-    pass
+    if year % 400 == 0:
+        return True
+    if year % 100 == 0:
+        return False
+    if year % 4 == 0:
+        return True
+    return False
 
+print(is_leap_year(1900))
 # Task 7: Count Vowels
 def count_vowels(text):
     """
