@@ -43,7 +43,6 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
-print(is_prime(7))
 
 # Task 4: Largest Number in List
 def find_largest(numbers):
@@ -62,8 +61,20 @@ def reverse_number(num):
     Return the reversed number.
     Example: reverse_number(123) → 321.
     """
-    reverse = num[::-1]
-    return reverse
+    
+    if num < 0:
+        sign = -1
+    else:
+        sign = 1
+
+        num *= sign #change number to a positive number if negative
+        reversed_num = 0
+        while num > 0:
+            reversed_num = reversed_num * 10 + num % 10
+            num //= 10
+        return sign * reversed_num
+
+print(reverse_number(100))
 
 # Task 6: Leap Year Check
 def is_leap_year(year):
@@ -79,9 +90,8 @@ def is_leap_year(year):
         return False
     if year % 4 == 0:
         return True
-    return False
+    return False #NEED TO FIX HERE
 
-print(is_leap_year(1900))
 # Task 7: Count Vowels
 def count_vowels(text):
     """
