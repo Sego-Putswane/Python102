@@ -74,8 +74,6 @@ def reverse_number(num):
             num //= 10
         return sign * reversed_num
 
-print(reverse_number(100))
-
 # Task 6: Leap Year Check
 def is_leap_year(year):
     """
@@ -99,7 +97,13 @@ def count_vowels(text):
     Return the count.
     Example: count_vowels("hello") → 2.
     """
-    pass
+    vowel_count = 0
+    for char in text:
+        if char in ["a","e","i","o","u","A","E","I","O","U"]:
+            vowel_count += 1
+    return vowel_count
+
+print(count_vowels("lesego"))
 
 # Task 8: Factorial
 def factorial(n):

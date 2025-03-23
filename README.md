@@ -66,7 +66,7 @@ Welcome to the Python Loops and Functions Project! In this project, you will pra
 3. **Run the Tests**:  
    - Run the tests and make sure they all pass:  
      ```bash
-     pytest test_tasks.py
+     
      ```
    - Passing test cases will appear like this:
      ![Alt text](testcases.png)
@@ -96,7 +96,7 @@ Welcome to the Python Loops and Functions Project! In this project, you will pra
 ### Task 1: Sum of Squares
 - Calculate the sum of squares of the first `n` natural numbers.
 
-### Task 2: Fibonacci Sequence
+### Tpytest test_tasks.pyask 2: Fibonacci Sequence
 - Generate the first `n` numbers in the Fibonacci sequence.
 
 ### Task 3: Prime Number Check
