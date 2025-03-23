@@ -103,16 +103,17 @@ def count_vowels(text):
             vowel_count += 1
     return vowel_count
 
-print(count_vowels("lesego"))
-
 # Task 8: Factorial
 def factorial(n):
-    """
-    Calculate the factorial of a number using a while loop.
-    Return the factorial.
-    Example: factorial(5) → 120.
-    """
-    pass
+    if n < 0:
+        return "number(n) should be greater than 0. Try again."
+    result = 1
+    while n > 0:
+        result *= n
+        n -= 1
+    return result
+
+print(factorial(-5))
 
 # Task 9: Grade Calculator
 def calculate_grade(score):
